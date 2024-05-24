@@ -4,9 +4,12 @@ body{
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
+/* Scroll Bar width */
 html{
     scrollbar-width: thin;
 }
+
+/* Navbar */
 .navlogo{
     width: 50px;
     height:50px;
@@ -24,6 +27,8 @@ html{
     font-style: italic;
     font-size: 1.5rem;
 }
+
+/* Hero Container */
 .hero{
     min-height: 89vh;
     width: 100%;
@@ -37,7 +42,6 @@ html{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* color: #fff; */
     z-index: -1;
 }
 .hero .hero-left h1{
@@ -51,7 +55,6 @@ html{
     position: absolute;
     right: 0;
     bottom: 0;
-    /* padding:0 2rem; */
     color: #fff;
     text-align: center; 
 }
@@ -73,6 +76,9 @@ html{
 .next-arrow{
     border-left: 1px solid #fff;
 }
+
+
+/* Reputation Container */
 .reputation-div{
     width: 75%;
     margin: 0 auto;
@@ -82,6 +88,9 @@ html{
     font-size: 2.2rem;
     margin: 1rem 0;
 }
+
+
+/* AboutUs Container */
 .aboutus{
     width: 90%;
     margin: 5rem auto;
@@ -115,6 +124,9 @@ html{
     width: fit-content;
     margin: 1rem 0 0 0;
 }
+
+
+/* Service Container */
 .services-container{
     background-color: lightgray;
     padding: 3rem 0 2rem 0;
@@ -147,6 +159,8 @@ html{
     border-bottom: 3px solid #fff;
 }
 
+
+/* Experience Div */
 .expreience-div{
     width: 90%;
     height: 80vh;
@@ -161,7 +175,6 @@ html{
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    /* padding: 2rem; */
     width: fit-content;
     margin: 0 auto;
     position: relative;
@@ -178,7 +191,6 @@ html{
     color: orangered;
     position: absolute;
     right: 0;
-    /* top: 0; */
     z-index: 100;
     top: -10%;
 }
@@ -201,7 +213,7 @@ html{
     padding-left: 0.5rem;
 }
 .experience-box:nth-child(even) {
-    z-index: 2; /* Ensure second and fourth boxes are above first and third boxes */
+    z-index: 2;
 }
 .experience-absolute .rightbottomi{
     position: absolute;
@@ -226,6 +238,7 @@ html{
 
 
 
+/* Consultation Container */
 .consultation{
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -257,6 +270,8 @@ html{
     border: 1px solid #fff;
 }
 
+
+/* Project Container */
 .project {
     padding: 0 6.5rem;
     margin: 3rem 0;
@@ -306,7 +321,6 @@ html{
     width: 95%;
     justify-content: flex-end;
     align-items: center;
-    /* padding: 0 2rem; */
 }
 .projectbottom  button{
     width: 25%;
@@ -317,6 +331,7 @@ html{
 
 
 
+/* OuterFormData Container */
 .outerformdata{
     background-color: lightgray;
     padding: 2rem 0;
@@ -377,6 +392,8 @@ form button{
 }
 
 
+
+/* Contact Info Container */
 .contact-info{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -409,7 +426,6 @@ form button{
 }
 .contact input{
     padding: 0.5rem 2rem;
-    /* border: none; */
     outline: none;
 }
 .contact button{
@@ -426,6 +442,9 @@ form button{
 .contact  .middlei{
     margin: 0 1.5rem;
 }
+
+
+/* Footer */
 footer{
     width: 100%;
     background-color: rgb(19, 19, 248);
@@ -451,7 +470,7 @@ footer p{
 
 
 
-
+/* Media Queries Started */
 
 @media only screen and (max-width:425px){
 
@@ -697,6 +716,603 @@ footer p{
     }
     footer p{
         width: 90%;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:425px) and (max-width:600px){
+
+
+    .navlogo{
+        width: 35px;
+        height:35px;
+        margin-right: 0.8rem;
+    }
+    .navbar-nav .nav-link {
+        margin: 0 20px; 
+    }
+    .navbar-brand{
+        font-size: 1.3rem;
+    }
+    .hero{
+        min-height: 80vh;
+        padding-top: 5rem;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: flex-start;
+        top: 10%;
+        grid-template-columns: 1fr;
+    }
+    .hero .hero-left h1{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 2.5rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .hero-right{
+        width: 100%;
+    }
+    .hero-right h5{
+        padding: 1rem 0 0 0;
+    }
+    .hero-right p{
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+
+    /* About us     */
+    .aboutus{
+        width: 100%;
+        margin: 4rem auto;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .aboutus img{
+        width:45%;
+        min-height:50%;
+        display: flex;
+        position: absolute;
+        top: 15%;
+        left: 0%;
+    }
+    .aboutus .aboutusdiv{
+        text-align: start;
+        padding: 1rem;
+        width: 60%;
+        min-height: 50%;
+        top: 0;
+        right: 0;
+    }
+    .aboutusdiv h2{
+        margin:0 0 1rem 0;
+        font-size: 1.1rem;
+    }
+    .aboutusdiv p{
+        font-size: 0.9rem;
+    }
+    .aboutusbutton{
+        width: fit-content;
+        margin: 1rem 0 0 0;
+        font-size: 0.9rem;
+    }
+
+
+    
+    /* Experience Container */
+    .expreience-div{
+        width: 90%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 3rem auto;
+    }
+    .expreience-div .experience-left-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    }
+    .expreience-div .experience-left-div .experience-box{
+        padding: 1rem 2rem;
+        margin: 0.5rem;
+        position: relative;
+        z-index: 1;
+    }
+    .experience-box i{
+        font-size: 2.2rem;
+        right: 0;
+        top: 0;
+    }
+    .experience-absolute{
+        left: 0;
+        top: 0;
+    }
+    .experience-box .toprighti{
+        left: 85%;
+        top: 0;
+    }
+    .experience-absolute .rightbottomi{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .experience-right-div{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .experience-right-div h1{
+        font-size: 1.5rem;
+    }
+    
+
+
+    /* Consultation */
+    .consultation{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        height: 35vh;
+        padding: 2rem 0;
+    }
+    .consultation .consultation-left{
+        width: 90%;
+        margin: 0rem auto;
+    }
+    .consultation .consultation-left h2{
+        font-size: 1.2rem;
+    }
+    .consultation .consultation-left p span{
+        letter-spacing:4px;
+        font-size: 1rem;
+    }
+    .consultation-right{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .consultation-right button{
+        background-color: transparent;
+    }
+    
+
+    /* Projects */
+    .project {
+        padding: 0;
+        margin: 5rem 0 1rem 0;
+        text-align: center;
+        font-weight: bold;
+    }
+    .projects-div{
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height: 100vh;
+        width:90%;
+        margin: 3rem auto;
+    }
+    .projects-left{
+        width: 100%;
+    }
+    .projects-right{
+        display: grid;
+        grid-template-columns: 1fr;   
+        width: 100%;
+        height: 100%;
+    }
+    .projectbottom{
+        margin: 1rem 0;
+        width: 90%;
+    }
+    .projectbottom  button{
+        width: 35%;
+    }
+    .projectbottom .radio{
+        margin: 0 1rem;
+    }
+    
+    
+    /* Form Data */
+    .formdata{
+        width: 90%;
+        margin: 2rem auto;
+    }
+    .formdata form .inputs{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    
+
+    /* Contact Info */
+    .contact-info{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .contact-info .contact-info-left{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contact-info-left a{
+        display: none;
+    }
+    .contact-info .contact{
+        margin: 0.1;
+    }
+    .contact-info .contact p{
+        margin-left: 0.5rem;
+        word-spacing: 0px;
+        font-size: 0.9rem;
+    }
+    .contact-info-right{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contact input{
+        padding: 0.5rem 0.2rem;
+    }
+    .contact button{
+        margin: 0 0.5rem;
+        padding: 0.5rem 0.5rem;
+    }
+    .contact i{
+        font-size: 1.5rem;
+    }
+    .contact  .middlei{
+        margin: 0 1rem;
+    }
+    footer p{
+        width: 90%;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width:600px) and (max-width:768px){
+
+
+    .navbar-nav .nav-link {
+        margin: 0 20px; 
+    }
+    .hero{
+        min-height: 80vh;
+        /* padding-top: 5rem; */
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        top: 10%;
+        grid-template-columns: 1fr;
+    }
+    .hero .hero-left h1{
+        width: 80%;
+        margin: 0 auto;
+        font-size: 3rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .hero-right h5{
+        padding: 1rem 0 0 0;
+    }
+    .hero-right p{
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+
+    /* About us     */
+    .aboutus .aboutusdiv{
+        text-align: start;
+        padding: 1rem;
+        width: 45%;
+        top: 5%;
+        right: 0;
+    }
+    .aboutusdiv h2{
+        margin:0 0 1rem 0;
+    }
+    .aboutusbutton{
+        width: fit-content;
+        margin: 1rem 0 0 0;
+    }
+
+
+    
+    /* Experience Container */
+    .expreience-div{
+        width: 90%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 3rem auto;
+    }
+    .expreience-div .experience-left-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    }
+    .expreience-div .experience-left-div .experience-box{
+        padding: 1rem 2rem;
+        margin: 1.5rem;
+        position: relative;
+        z-index: 1;
+    }
+    .experience-box i{
+        font-size: 2.5rem;
+        right: 0;
+        top: 0;
+    }
+    .experience-absolute{
+        left: 0;
+        top: 0;
+    }
+    .experience-box .toprighti{
+        left: 85%;
+        top: 0;
+    }
+    .experience-absolute .rightbottomi{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .experience-right-div{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .experience-right-div h1{
+        font-size: 2rem;
+    }
+    
+
+
+    /* Consultation */
+    .consultation{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 2fr 1fr;
+        height: 40vh;
+        padding: 2rem 0;
+    }
+    .consultation .consultation-left{
+        margin: 0rem auto;
+    }
+    .consultation .consultation-left h2{
+        font-size: 1.3rem;
+    }
+    .consultation .consultation-left p span{
+        letter-spacing:4px;
+        font-size: 1.1rem;
+    }
+    .consultation-right{
+        margin: 0 auto;
+    }
+    .consultation-right button{
+        background-color: transparent;
+    }
+    
+
+    /* Projects */
+    .project {
+        padding: 0;
+        margin: 5rem 0 1rem 0;
+        text-align: center;
+        font-weight: bold;
+    }
+    .projects-div{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        min-height: 100vh;
+        width:95%;
+        margin: 3rem auto;
+    }
+    .projects-left{
+        width: 100%;
+    }
+    .projects-right{
+        display: grid;
+        grid-template-columns: 1fr 1fr;   
+        width: 100%;
+        height: 100%;
+    }
+    .projectbottom{
+        margin: 1rem 0;
+        width: 90%;
+    }
+    .projectbottom  button{
+        width: 20%;
+    }
+    .projectbottom .radio{
+        margin: 0 1rem;
+    }
+    
+    
+    /* Form Data */
+    .formdata{
+        width: 90%;
+        margin: 2rem auto;
+    }
+    .formdata form .inputs{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    
+
+    /* Contact Info */
+    .contact-info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+    .contact-info .contact-info-left{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contact-info .contact{
+        margin: 0.1;
+    }
+    .contact-info .contact p{
+        margin-left: 0.5rem;
+        word-spacing: 2px;
+        font-size: 0.9rem;
+    }
+    .contact-info-right{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contact input{
+        padding: 0.5rem 0.2rem;
+    }
+    .contact button{
+        margin: 0 0.5rem;
+        padding: 0.5rem 0.5rem;
+    }
+    .contact i{
+        font-size: 1.8rem;
+    }
+    .contact  .middlei{
+        margin: 0 1rem;
+    }
+    footer p{
+        width: 90%;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width:769px) and (max-width:1024px){
+
+
+    .navbar-nav .nav-link {
+        margin: 0 20px; 
+    }
+    .hero .hero-left h1{
+        width: 80%;
+        margin: 0 auto;
+        font-size: 3.5rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+
+    /* About us     */
+    .aboutus .aboutusdiv{
+        text-align: start;
+        padding: 1rem;
+        width: 40%;
+        top: 8%;
+        right: 0;
+    }
+    .aboutusdiv h2{
+        margin:0 0 1rem 0;
+    }
+    .aboutusbutton{
+        width: fit-content;
+        margin: 1rem 0 0 0;
+    }
+
+
+    
+    
+
+    
+    /* Projects */
+    .project {
+        padding: 0;
+        margin: 5rem 0 1rem 0;
+        text-align: center;
+        font-weight: bold;
+    }
+    .projects-div{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        min-height: 100vh;
+        width:95%;
+        margin: 3rem auto;
+    }
+    .projects-left{
+        width: 100%;
+    }
+    .projects-right{
+        display: grid;
+        grid-template-columns: 1fr 1fr;   
+        width: 100%;
+        height: 100%;
+    }
+    .projectbottom{
+        margin: 1rem 0;
+        width: 90%;
+    }
+    .projectbottom  button{
+        width: 23%;
+    }
+    .projectbottom .radio{
+        margin: 0 1rem;
+    }
+    
+   
+    #message{
+        width: 115%;
+        margin: 1.5rem 0 0.5rem 0;
+        border: none;
+        outline: none;
+        padding: 0.5rem 1rem;
+    }
+
+    /* Contact Info */
+    .contact-info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+    }
+    .contact-info .contact-info-left{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contact-info .contact{
+        margin: 0.1;
+    }
+    .contact-info .contact p{
+        margin-left: 0.5rem;
+        word-spacing: 2px;
+        font-size: 0.9rem;
+    }
+    .contact-info-right{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contact input{
+        padding: 0.5rem 2rem;
+    }
+    .contact button{
+        margin: 0 0.5rem;
+        padding: 0.5rem 2rem;
+    }
+    .contact i{
+        font-size: 1.8rem;
+    }
+    .contact  .middlei{
+        margin: 0 1rem;
+    }
+    footer p{
+        width: 80%;
         font-size: 1rem;
     }
 }
