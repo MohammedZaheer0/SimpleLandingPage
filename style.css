@@ -528,13 +528,15 @@ footer p{
         min-height:50%;
         display: flex;
         position: absolute;
-        top: 18%;
+        top: 15%;
+        justify-content: center;
+        align-items: center;
         left: 0%;
     }
     .aboutus .aboutusdiv{
         text-align: start;
         padding: 1rem;
-        width: 55%;
+        width: 50%;
         min-height: 50%;
         top: 0;
         right: 0;
@@ -1315,4 +1317,43 @@ footer p{
         width: 80%;
         font-size: 1rem;
     }
+}
+
+
+@media only screen and (min-width:1024px) and (max-width:1440px){
+    /* AboutUs Container */
+.aboutus{
+    width: 90%;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    position: relative;
+}
+.aboutus img{
+    width: 100%;
+    min-height:70vh;
+}
+.aboutus .aboutusdiv{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    padding: 2rem;
+    width: 45%;
+    min-height: 60vh;
+    background-color: rgb(19, 19, 248);
+    color: #fff;
+    top: 5%;
+    right: 0;
+}
+.aboutusdiv h2{
+    font-weight: bold;
+    margin:0 0 1.2rem 0;
+}
+.aboutusbutton{
+    width: fit-content;
+    margin: 1rem 0 0 0;
+}
+
 }
